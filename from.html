@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style type="text/css">
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.75)50%,rgba(0,0,0,0.75)50%) ,url(file:///C:/Users/SHREEE/Downloads/pexels-matthew-montrone-1179225.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            height: 100vh;
+ }
+ .main{
+    margin: 0;
+    padding: 0;
+ }
+ .intro{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+ }
+ .intro .par{
+    padding: 20px;
+    padding-bottom: 25px;
+    
+    font-family: arial;
+    font-size: x-large;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+ }
+ .intro h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-top: 20%;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+
+ }
+
+ .from{
+    width: 3
+    
+    50px;
+    height: 480;
+    color: white;
+    background: linear-gradient(to top,rgba(0,0,0,0.75)70%,rgba(0,0,0,0.75)70%);
+    background-size: 40px;
+    position: absolute;
+    top: -20px;
+    left: 870px;
+ }
+           
+
+    </style>
+     <script type="text/javascript">
+        function Submit(){
+            alert("You are submitted the From");
+        } 
+    </script>
+</head>
+<body>
+    <div class="main">
+            <div class="intro">
+                <h1>Addmission From</h1>
+                <h2 class="par">Start a new Begining</h2>
+            </div>
+        <div class="from">
+            <form>
+                <fieldset>
+                    <legend>Student imformation</legend>
+                <label for="sname"><h3>Name:</h3></label><input type="text" id="sname" placeholder="first second last" required autofocus>
+                <label for="sname"><h3>Password:</h3></label><input type="text" id="password" required>
+                <label for="cname"><h3>Collage Name:</h3></label><input type="text" id="cname" required>
+                <h3>Select Department : </h3>
+                <input type="radio" name="cs" id="sCProg" value="CProg">
+                <label for="sCProg">Computer Engineering</label><br>
+                <input type="radio" name="it" id="sCPP" value="CPP">
+                <label for="sCPP">IT</label><br>
+                <input type="radio" name="ce" id="sPython" value="Python">
+                <label for="sPython">Civil Engineering</label><br>
+                <input type="radio" name="entc" id="sJava" value="Java">
+                <label for="sJava">ENTC</label><br>
+                <input type="radio" name="studCSharp" id="sCSharp" value="CSharp">
+                <label for="sCSharp">Electrical Engineering</label><br>
+               <h3> Gender :</h3> 
+                            <input type="radio" name="studGender" id="sMale" value="male">
+                            <label for="sMale">MALE</label>
+                            <input type="radio" name="studGender" id="sFemale" value="female">
+                            <label for="sFemale">FEMALE</label>
+                            <input type="radio" name="studGender" id="sOther" value="other">
+                            <label for="sOther">OTHER</label><br>
+                <label for="bdate"><h3>Birth Date:</h3></label><input type="date" id="bdate" required>
+                <h4>Upload last Year Marksheet</h4>
+                <input type="file" value="upload file" required><br><br>
+                    
+                    <button onclick="Submit()">Submit</button>
+
+                    <input type="reset" value="Cancel"><br>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
